@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Schematics of the Subject: Exposition</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Testing how the elements and the styling looks and feels.">
+        <meta name="keywords" content="tosculptclouds 林羿羲
+ about">
+        <meta name="author" content="林羿羲">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta property="og:title" content="Schematics of the Subject: Exposition">
+        <meta property="og:url" content="https://tosculptclouds.github.io/about.html">
+        <meta property="og:description" content="Testing how the elements and the styling looks and feels.">
+        <meta property="og:locale" content="en_US">
+        <!-- <meta property="og:locale:alternate" content="none yet"> !-->
+        <!-- Can be website, article, profile !-->
+        <meta property="og:type" content="website">
+        <!-- <meta property="og:image" content=".">
+        <meta property="og:image:alt" content="dunno"> -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav id="subtopics">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="notes.html">notes</a></li>
+                    <li><a href="writing.html">writing</a></li>
+                    <li><b><a href="pages/about.html">about</a></b></li>
+                </ul>
+            </nav>
+            <nav id="children">
+                <ul>
+                    <li><a href="example.html">example</a></li>
+                </ul>
+            </nav>
+            <pre class="clouds">
+     _            _            _            _     
+ _ <(☼)  _    _  (☼)> _    _ <(☼)  _    _  (☼)> _ 
+\\\_|||_///  \\\_|||_///  \\\_|||_///  \\\_|||_///
+    /]\          /[\          /]\          /[\    
+            </pre>
+        <div id="table-of-contents">
+            <ol>
+                <li><a href="#preface">Preface</a></li>
+                <li>
+                    <a href="#these-entries-are-to-stress-test-the-table-of-contents">These entries are to stress test the table of contents</a>
+                    <ol>
+                        <li>This is the first entry</li>
+                        <li>This is the second entry</li>
+                        <li>This is the third entry</li>
+                        <li>This is the fourth entry</li>
+                        <li>
+                            This is the fifth entry
+                            <ol>
+                                <li>This is a subentry, the first one</li>
+                                <li>This is a subentry, the second one</li>
+                                <li>This is the third subentry</li>
+                                <li>This is an entry with an especially long name, which does not make sense, because why would an entry be that long for it wears down the reader for no benefit since the heading provides only a hint, a direction for the body text to follow</li>
+                                <li>When these entries get too long, the scroll bar will be initiated, so that you can scroll to see whatever entry you want, and click your way through the page</li>
+                                <li>As a sidenote, my website will only support up to three levels of headings, so that nesting does not become irritating, both for the writer (me) and for the reader (also probably me).</li>
+                                <li>These entries should not overlap with anything else; if it does, notify me!</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><a href="#notes-about-the-sidenote-marginnote-features">Notes about the sidenote/marginnote features</a></li>
+                <li><a href="#markup-in-text">Markup in text</a></li>
+                <li><a href="#multimedia-options-and-style">Multimedia options and style</a></li>
+            </ol>
+        </div>
+        </header>
+        <main>
+        <section>
+            <div class="epigraph">
+                <blockquote><p>This is an epigraph, one of my favorite features in books and websites.</p><footer>Me, <cite>right now</cite></footer></blockquote>
+                <blockquote><p>to live in exile&mdash;to sculpt clouds.</p><footer>Jos&eacute; Mart&iacute;, <cite>Notebook 5: &ldquo;Movement is Contagious&rdquo;, trans. Esther Allen</cite></footer></blockquote>
+            </div>
+        </section>
+        <article>
+            <section>
+                <h1><a name="preface"></a>Preface <a class="heading-link" href="#preface">(permalink)</a> <a class="heading-link" href="style-guide.html">(go to top)</a></h1>
+                <p>
+                    This page is/was used to check how elements and styling behave and look. My muses are innumerable, but some of the more important ones that deserve a citation are:
+                </p>
+                <ul>
+                    <li><a href="https://wiki.xxiivv.com/site/home.html">XXIIVV</a><p>Some things that I really liked about this design is its simplicity and its use of images to make a barebones site look animated. I decided to go with their style of navigation, with vertical links of two columns. I think it is fairly obvious how much my site shares with this site.</p></li>
+                    <li><a href="https://gwern.net/">Gwern</a><p>Although I disagree with this site&rsquo;s liberal use of Javascript to supposedly improve the reader experience<span class="sidenote-number"></span><span class="sidenote">And make the site much slower as a result. Sometimes I wish that there was a Javascript-free version of <a href="https://gwern.net/">Gwern</a> so I do not have to go through the painful process of waiting for things to load. This is also a test for sidenotes, to see if they are displayed accurately. I&rsquo;m using CSS pilfered from <a href="https://github.com/edwardtufte/tufte-css/">Github: Tufte CSS</a>, since I think that it is effective and fast for my purposes.</span>, I still enjoy their prioritization of the content, making sure that the process of content to other content is as smooth as possible. I was not sure whether I should make body text justified or not, since I heard that the hyphenation algorithm for web browsers is not on-par with the TeX hyphenation algorithm, but after seeing their body text, I was sold on justification, even if it meant awkward hyphenation and unusual word spacing.</p></li>
+                    <li><a href="https://brutalist-web.design/">Brutalist Web Design</a><p>I think there is beauty in efficiency, and this website convinced me to put content first, before anything else (among other nudges from various sites, most of which are on this list). I have tried to follow these guidelines, and if I have transgressed upon them, it is probably for a good reason.</p></li>
+                    <li><a href="https://justfuckingusehtml.com/">Just Fucking Use HTML</a> and <a href="https://motherfuckingwebsite.com/">Motherfucking Website</a><p>These two websites helped me understand the uses for different tags, among their satirical jabbing at Javascript frameworks.<span class="sidenote-number"></span><span class="sidenote">Which I fully agree with. See <a href="https://dayssincelastjsframework.com/">Days Since Last JS Framework</a>, which  is arguably not long enough. How many frameworks do you <b>really</b> need?</span> Plain HTML (without CSS) can be useful and beautiful in its own right, and by jumping straight to the heavy-hitters, we miss out on the strength of HTML, which may be better suited for a project.</p></li>
+                    <li><a href="https://maggieappleton.com/garden/">The Garden of Maggie Appleton</a><p>I think the idea of a digital garden is interesting, and this was one of the digital gardens which popped out for me the most. I don&rsquo;t know how I&rsquo;ll accidentally mimic this website, but I probably will.</p></li>
+                    <li><a href="https://github.com/edwardtufte/tufte-css/">Github: Tufte CSS</a><p>I enjoy how this style looks so much that it is a given that my website will bear a heavy resemblance towards it. In particular, I am using its sidenote CSS, which is not as complex as I thought it would have been, a week ago when I didn&rsquo;t know any HTML and CSS. It is really just the use of the float property.</p></li>
+                    <li><a href="https://jeffhuang.com/designed_to_last/">This Page is Designed to Last: A Manifesto for Preserving Content on the Web</a><p>Although occupying the same niche as <a href="https://brutalist-web.design/">Brutalist Web Design</a>, it goes further in its spartan requirements, which is justified due to its mission: slow down internet rot.</p></li>
+                    <li><a href="https://karthinks.com/">Karthinks</a><p>I especially enjoy how its table of contents is fixed to the right, allowing for easy access. That same feature is also in my website. Its distribution of information is also extremely streamlined, and I have enjoyed many good articles on specific Emacs functionalities from this site.</p></li>
+                </ul>
+            </section>
+            <section>
+                <h1><a name="these-entries-are-to-stress-test-the-table-of-contents"></a>These entries are to stress test the table of contents <a class="heading-link" href="#these-entries-are-to-stress-test-the-table-of-contents">(permalink)</a> <a class="heading-link" href="style-guide.html">(go to top)</a></h1>
+                <p>If you&rsquo;re wondering why there is a bunch of nonsense entries in the table of contents, it is because I want to test how the table of contents would respond with enough entries, in the hopes that, one day, I too will need that many entries.</p>
+            </section>
+            <section>
+                <h1><a name="notes-about-the-sidenote-marginnote-features"></a>Notes about the sidenote/marginnote features <a class="heading-link" href="#notes-about-the-sidenote-marginnote-features">(permalink)</a> <a class="heading-link" href="style-guide.html">(go to top)</a></h1>
+                <p>One feature that I especially like in other websites and in my own is sidenotes (and their close cousin/doppleganger, marginnotes<span class="sidenote-number"></span><span class="sidenote">Is it marginnote with no spaces or margin note with one space? Or is it margin-note with a hyphen separating these two words?</span>), because it allows the writer to include notes that run in all sorts of directions away from the general purpose of the content in a way that is not tiring for the reader. Because I am using the Tufte CSS method for sidenotes, they are simple but easily broken. If they are placed too close<span class="sidenote-number"></span><span class="sidenote">The pushing problem in question. I don&rsquo;t know if this is the case for all browsers though.</span> to each other, they don&rsquo;t overlap, but the lower sidenote is pushed down, separating it from its marker. I also follow the Tufte CSS advice in including figures only in marginnotes, as I have discovered that the multimedia in question will conflict with the number marker.</p>
+                <p>Marginnotes are the same as sidenotes, except they have no marker, which makes them more general than sidenotes. For a style guide on usage, I would imagine that I would use sidenotes to make opaque some witty pun that I thought of or to explain something in more depth that is ancillary to the purpose of the main content. For marginnotes<span class="marginnote"><img src="images/print-view.png" alt="How the section looks when it is printed.">You can see how it is now alternating between sides, which allows for more compact notes. The image quality isn&rsquo;t too good, but it is probably fine enough for a casual examination of the layout.</span>, I would imagine that I would use them to show work (for math and its parallel subjects) that the normal reader might find tedious to walk through but may be helpful for a newcomer (if I ever become skilled to the point where I&rsquo;m writing math notes).</p>
+                <p>When printing out a page, I have made it so that every other sidenote/marginnote is placed on the left margin instead, which alleviates this pushing problem. However, this cannot be done on the website, since the extra space needed is occupied by the fixed table of contents, which I simply think is too useful to be replaced by left-margin notes.</p>
+            </section>
+            <section>
+                <h1><a name="markup-in-text"></a>Markup in text <a class="heading-link" href="#markup-in-text">(permalink)</a> <a class="heading-link" href="style-guide.html">(go to top)</a></h1>
+                <p>There are many markup options available in-text, like <b>bolding</b> a word or two to emphasize it (one must make sure to never bold too many words however) or <i>italicizing</i> a word or two (not recommended because it is too light to be seen easily, unlike bolding). To indicate a series of keypresses, we have the <code>&lt;kbd&gt;</code> tag, so you can write <kbd>M-x tetris</kbd>. Links are designated by <a href="index.html">an underline</a>. I wasn&rsquo;t sure whether or not to also add color as a link quality, but decided against it, because I like how the website looks with monochromaticity.</p>
+                <ol>
+                    <li>Here is a list!</li>
+                    <li>This is <b>bolded</b>.</li>
+                    <li>This is <i>italicized</i>.</li>
+                    <li>This is some code: <code>(loop (print (eval (read))))</code></li>
+                    <ol>
+                        <li>This is a list inside a list: a nested list.</li>
+                        <li>Another list item.</li>
+                    </ol>
+                    <li>Press this: <kbd>Ctrl-A</kbd></li>
+                    <li>This list item has a sidenote.<span class="sidenote-number"></span><span class="sidenote">This is its sidenote.</span></li>
+                </ol>
+                <p>And here is an unordered list:</p>
+                <ul>
+                    <li>Here is a list!</li>
+                    <li>This is <b>bolded</b>.</li>
+                    <li>This is <i>italicized</i>.</li>
+                    <li>This is some code: <code>(loop (print (eval (read))))</code></li>
+                    <ul>
+                        <li>This is a list inside a list: a nested list.</li>
+                        <li>Another list item.</li>
+                    </ul>
+                    <li>Press this: <kbd>Ctrl-A</kbd></li>
+                    <li>This list item has a sidenote.<span class="sidenote-number"></span><span class="sidenote">This is its sidenote.</span></li>
+                </ul>
+            </section>
+            <section>
+                <h1><a name="multimedia-options-and-style"></a>Multimedia options and style <a class="heading-link" href="#multimedia-options-and-style">(permalink)</a> <a class="heading-link" href="style-guide.html">(go to top)</a></h1>
+                <p>Many times, it is not enough just to have text; one must have other forms of media to go with it. However, large images make the site slower, so we cannot have too many. For those we do have, we need to optimize<span class="sidenote-number"></span><span class="sidenote">Probably using tools and techniques found in this page: <a href="https://kokorobot.ca/site/image_optimization.html">image optimization</a>.</span> them to make sure they run smoothly. Here is an image of a room full of the same books.</p>
+                <figure><img src="images/book-room.jpg" alt="A room full of books, when in actuality, only consists of ten to fifteen books with huge amounts of copies."></figure>
+                <p>We might also need tables&mdash;though for what purpose I do not know. I don&rsquo;t think that I&rsquo;ll be doing much accounting or any other work that would need tabular data. Here is a table with some mock data.</p>
+                <table border="1">
+                    <thead><th>Foo</th><th>Bar</th><th>Fizz</th><th>Buzz</th></thead>
+                    <thead><th colspan="2">FooBar</th></thead>
+                    <tr><td>100</td><td>9.61</td><td>22.1</td><td>0.63</td><td>0.9</td></tr>
+                    
+                </table>
+            </section>
+        </article>
+        </main>
+        <footer>
+            <hr>
+            林羿羲 &copy; 2025<div id="license">BY-NC-SA 4.0</div>
+        </footer>
+    </body>
+</html>

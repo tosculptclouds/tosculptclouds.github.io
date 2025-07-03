@@ -1,0 +1,115 @@
+html {
+    /* START RESET */
+    padding: 0;
+    margin: 0;
+    /* END RESET */
+    /* START COLOR-SCHEME */
+    /* Color scheme is what Tufte CSS uses. I might change it in the future */
+    background-color: #fffff8;
+    color: #111111;
+    /* High/low contrast theme support, just in case */
+    @media (prefers-contrast: more) {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    @media (prefers-contrast: less) {
+        background-color: #eeeeee;
+        color: #222222;
+    }
+    @media (prefers-color-scheme: dark) {
+        /* For all the moles out there */
+        background-color: #111111;
+        color: #fffff8;
+        @media (prefers-contrast: more) {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        @media (prefers-contrast: less) {
+            background-color: #222222;
+            color: #eeeeee;
+        }
+    }
+    /* END COLOR-SCHEME */
+    /* START FONT-SCHEME*/
+    /* Pulled from https://www.digitalocean.com/community/tutorials/css-system-font-stack */
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif;
+    /* Apparently a famous trick used to make ems and rems the size of 10px */
+    /* Pulled from Beginning HTML5 and CSS3 for Dummies, 2013 edition, part 4, ch. 11 */
+    font-size: 62.5%;
+    line-height: 1.2; /* Seems to be the sweet spot for my display. Further testing needed. */
+    /* END FONT-SCHEME */
+    /* START MISC */
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* END MISC */
+}
+/* START NAVIGATION */
+nav {
+    /* Arranges consecutive navigation elements left-to-right instead of top-down */
+    display: inline-block;
+    font-size: 1.8rem;
+    ul {
+        padding: 0;
+        margin: 1rem;
+        li {
+            list-style-type: none;
+            white-space: pre;
+        }
+    }
+}
+/* END NAVIGATION */
+/* START PRINTING--GENERAL */
+@media print {
+    html {
+        /* Set colors, just in case. I think it already is black and white though */
+        background-color: #ffffff;
+        color: #000000;
+        /* We change the font to serif-style fonts for printing, for that fancier look and extra legibility on paper */
+        /* Pulled from https://css-tricks.com/snippets/css/font-stacks/ */
+        font-family:
+            Cambria,
+            "Hoefler Text",
+            Utopia,
+            "Liberation Serif",
+            "Nimbus Roman No9 L Regular",
+            Times,
+            "Times New Roman",
+            serif;
+        header {
+            /* We don’t want to display any navigation content, since the reader can’t navigate anyways */
+            display: none;
+        }
+        #table-of-contents {
+            /* Stylize the table of contents */
+        }
+    }
+
+        header {
+        display: none;
+    }
+    #toc {
+        max-width: 0vw;
+    }
+    head, title {
+        display: block;
+        font-size: 2.8rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    h1,
+    h2,
+    h3 {
+        max-width: 100% !important;
+    }
+}
+/* END PRINTING--GENERAL */
